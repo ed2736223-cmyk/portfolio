@@ -15,7 +15,8 @@ export default function Page() {
       url: "https://jawadcc.com",
       desc: "Corporate consultancy website with clean structure, service pages and clear calls to action.",
       tech: "WordPress, Elementor",
-      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200"
+      img: "/images/jawad.PNG"
+
     },
     {
       id: 2,
