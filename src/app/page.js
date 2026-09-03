@@ -6,170 +6,268 @@ export default function Page() {
   const [status, setStatus] = useState("");
   const projectsSliderRef = useRef(null);
 
-  // 1. Projects Data (WordPress portfolio work)
+  // 1. Projects Data (WordPress, Coding & Shopify portfolio work)
   const projects = [
     {
       id: 1,
-      title: "Trading Signals",
-      domain: "https://frontend-dusky-five-79.vercel.app/",
-      url: "https://frontend-dusky-five-79.vercel.app",
-      desc: "Forex signals landing page optimized for conversions and clear offer presentation.",
-      tech: "React, HTML, CSS,  Mern Stack",
-      img: "/images/tarde.png"
+      title: "Jawad CC",
+      domain: "jawadcc.com",
+      url: "https://jawadcc.com",
+      desc: "Corporate consultancy website with clean structure, service pages and clear calls to action.",
+      tech: "WordPress, Elementor",
+      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200"
     },
-    
     {
       id: 2,
-      title: "Saige PK",
-      domain: "saigepk.com",
-      url: "https://saigepk.com/",
-      desc: "Corporate presence for a service brand, focused on clean sections and strong typography.",
-      tech: "WordPress, Elementor",
-      img: "/images/saige.png"
-    },
-    {
-      id: 3,
-      title: "Suffi Travel",
-      domain: "suffitravel.co.uk",
-      url: "https://suffitravel.co.uk/",
-      desc: "Travel and tour booking website with clear packages, trust signals and mobile‑first layout.",
-      tech: "WordPress, Elementor, Custom Theme",
-      img: "/images/sufi.png"
-    },
-    {
-      id: 4,
-      title: "Upmark Tech",
-      domain: "upmarktech.com",
-      url: "https://upmarktech.com",
-      desc: "Tech and digital services site with service cards, CTAs and modern gradients.",
-      tech: "WordPress, Elementor",
-      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200",
-    },
-    {
-      id: 5,
-      title: "MJFXM",
-      domain: "mjfxm.co.uk",
-      url: "https://mjfxm.co.uk",
-      desc: "Financial brand presence with bold hero, pricing focus and trust badges.",
-      tech: "WordPress, Custom Design",
-      img: "https://images.unsplash.com/photo-1559525839-b184a4d69821?w=1200",
-    },
-    {
-      id: 6,
-      title: "HighClick",
-      domain: "highclick.pk",
-      url: "https://highclick.pk/",
-      desc: "Agency style website with service highlights, portfolio and strong branding.",
-      tech: "WordPress, Elementor",
-      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200",
-    },
-    {
-      id: 7,
-      title: "SuperDrive",
-      domain: "superdrive.ae",
-      url: "https://superdrive.ae/",
-      desc: "Automotive / rental style site with bold imagery and clear contact flows.",
-      tech: "WordPress, WooCommerce (optional)",
-      img: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=1200",
-    },
-    {
-      id: 8,
       title: "CorePrime Markets",
       domain: "coreprimemarkets.com",
       url: "https://coreprimemarkets.com/",
       desc: "Trading and investment platform site with multi‑section layout and clear CTAs.",
       tech: "WordPress, Custom Theme",
-      img: "https://images.unsplash.com/photo-1523287562758-66c7fc58967a?w=1200",
+      img: "https://images.unsplash.com/photo-1523287562758-66c7fc58967a?w=1200"
     },
     {
-      id: 9,
-      title: "BAMS Training",
-      domain: "bamstraining.com",
-      url: "https://bamstraining.com/",
-      desc: "Training and education website with course information and lead capture.",
-      tech: "WordPress, LMS Ready",
-      img: "https://images.unsplash.com/photo-1513258496099-48168024aec0?w=1200",
+      id: 3,
+      title: "Brands House",
+      domain: "brandshouse.com.pk",
+      url: "https://brandshouse.com.pk",
+      desc: "Branding and creative agency site showcasing portfolio work and service offerings.",
+      tech: "WordPress, Elementor",
+      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200"
     },
     {
-      id: 10,
+      id: 4,
+      title: "Baristeel Rack",
+      domain: "baristeelrack.com",
+      url: "https://baristeelrack.com",
+      desc: "Industrial and commercial product site with clear information hierarchy.",
+      tech: "WordPress, Corporate",
+      img: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=1200"
+    },
+    {
+      id: 5,
+      title: "Codees",
+      domain: "codees.nl",
+      url: "https://codees.nl",
+      desc: "Software and IT company website with modern service presentation and clear positioning.",
+      tech: "WordPress, Custom Theme",
+      img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200"
+    },
+    {
+      id: 6,
+      title: "SuperDrive",
+      domain: "superdrive.ae",
+      url: "https://superdrive.ae/",
+      desc: "Automotive / rental style site with bold imagery and clear contact flows.",
+      tech: "WordPress, WooCommerce (optional)",
+      img: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=1200"
+    },
+    {
+      id: 7,
       title: "Curves Fitness Pro",
       domain: "curvesfitnesspro.com",
       url: "https://curvesfitnesspro.com",
       desc: "Fitness brand website featuring programs, transformations and contact forms.",
       tech: "WordPress, Elementor",
-      img: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200",
+      img: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200"
     },
     {
-      id: 11,
+      id: 8,
       title: "Ibex Packaging",
       domain: "ibexpackaging.com",
       url: "https://ibexpackaging.com/",
       desc: "Product packaging site with category navigation and strong product visuals.",
       tech: "WordPress, WooCommerce",
-      img: "https://images.unsplash.com/photo-1585386959984-a4155223f3f8?w=1200",
+      img: "https://images.unsplash.com/photo-1585386959984-a4155223f3f8?w=1200"
     },
     {
-      id: 12,
+      id: 9,
       title: "House Movers UK",
       domain: "housemovers.co.uk",
       url: "https://housemovers.co.uk/",
       desc: "Local services site highlighting moving services, locations and quick quotes.",
       tech: "WordPress, Local SEO",
-      img: "https://images.unsplash.com/photo-1585366119957-e9730b6d0f44?w=1200",
+      img: "https://images.unsplash.com/photo-1585366119957-e9730b6d0f44?w=1200"
     },
     {
-      id: 13,
+      id: 10,
       title: "IEHSAS",
       domain: "iehsas.com",
       url: "https://www.iehsas.com/",
       desc: "Educational / certification website presenting programs and accreditation.",
       tech: "WordPress, Elementor",
-      img: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1200",
+      img: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1200"
+    },
+    {
+      id: 11,
+      title: "Coding AI Labs",
+      domain: "codingailabs.com",
+      url: "https://codingailabs.com/",
+      desc: "AI and software development company site with service breakdown and a tech‑forward design.",
+      tech: "WordPress, Elementor",
+      img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200"
+    },
+    {
+      id: 12,
+      title: "Top Group",
+      domain: "topgroup.pk",
+      url: "https://topgroup.pk/",
+      desc: "Corporate group website presenting multiple business divisions under one unified brand.",
+      tech: "WordPress, Elementor",
+      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200"
+    },
+    {
+      id: 13,
+      title: "Codixa Solutions",
+      domain: "codixasolutions.com",
+      url: "https://codixasolutions.com/",
+      desc: "IT solutions company site with service pages, case highlights and lead capture.",
+      tech: "WordPress, Elementor",
+      img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200"
     },
     {
       id: 14,
-      title: "US Newsy",
-      domain: "usnewsy.com",
-      url: "https://usnewsy.com",
-      desc: "News and blog platform with category pages and article layouts.",
-      tech: "WordPress, News Theme",
-      img: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=1200",
+      title: "Next Sol",
+      domain: "nextsol.pk",
+      url: "https://www.nextsol.pk/",
+      desc: "Technology solutions website with clean service cards and strong calls to action.",
+      tech: "WordPress, Elementor",
+      img: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
     },
     {
       id: 15,
-      title: "Tech Chrons",
-      domain: "techchrons.com",
-      url: "https://techchrons.com",
-      desc: "Tech blog with modern card‑based layout and readable typography.",
-      tech: "WordPress, Blog",
-      img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200",
+      title: "Travel Operations",
+      domain: "traveloperations.pk",
+      url: "https://www.traveloperations.pk/",
+      desc: "Travel agency website with tour packages, booking flow and destination highlights.",
+      tech: "WordPress, WooCommerce",
+      img: "https://images.unsplash.com/photo-1513258496099-48168024aec0?w=1200"
     },
     {
       id: 16,
-      title: "AP Newz",
-      domain: "apnewz.net",
-      url: "https://apnewz.net",
-      desc: "Online news portal optimized for content updates and engagement.",
-      tech: "WordPress, News Theme",
-      img: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200",
+      title: "Rasta Add",
+      domain: "rastaadd.com",
+      url: "https://rastaadd.com/",
+      desc: "Marketing / services website with clear offer sections and lead generation forms.",
+      tech: "WordPress, Elementor",
+      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200"
     },
     {
       id: 17,
-      title: "Huf Postt",
-      domain: "hufpostt.com",
-      url: "https://hufpostt.com",
-      desc: "Magazine style layout with multiple categories and featured posts.",
-      tech: "WordPress, Magazine Theme",
-      img: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0ea?w=1200",
+      title: "The Sale Purchase",
+      domain: "thesalepurchase.com",
+      url: "https://thesalepurchase.com/",
+      desc: "Classifieds and marketplace style website for buying and selling listings.",
+      tech: "WordPress, Custom Theme",
+      img: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=1200"
     },
     {
       id: 18,
-      title: "Baristeel Rack",
-      domain: "baristeelrack.com",
-      url: "https://baristeelrack.com/",
-      desc: "Industrial and commercial product site with clear information hierarchy.",
-      tech: "WordPress, Corporate",
-      img: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=1200",
+      title: "Usama Art",
+      domain: "usamaart.com",
+      url: "https://usamaart.com/",
+      desc: "Art and creative portfolio site with a gallery‑style layout for showcasing work.",
+      tech: "WordPress, Elementor",
+      img: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0ea?w=1200"
+    },
+    {
+      id: 19,
+      title: "Kiran's Salon",
+      domain: "kiranssalon.com",
+      url: "https://kiranssalon.com/",
+      desc: "Salon and beauty services website with service menu, gallery and booking info.",
+      tech: "WordPress, Elementor",
+      img: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200"
+    },
+    {
+      id: 20,
+      title: "Wissen Techs",
+      domain: "wissentechs.com",
+      url: "https://wissentechs.com/",
+      desc: "Technology company website with service overview and modern corporate design.",
+      tech: "WordPress, Elementor",
+      img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200"
+    },
+    {
+      id: 21,
+      title: "Tech Store",
+      domain: "techstore.pk",
+      url: "https://www.techstore.pk/",
+      desc: "Electronics and tech products store with category browsing and product listings.",
+      tech: "WordPress, WooCommerce",
+      img: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+    },
+    {
+      id: 22,
+      title: "Formence KSA",
+      domain: "formenceksa.com",
+      url: "https://formenceksa.com/",
+      desc: "Corporate services website for a KSA‑based brand with a professional, trust‑focused layout.",
+      tech: "WordPress, Elementor",
+      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200"
+    },
+    {
+      id: 23,
+      title: "PixyClick",
+      domain: "pixyclick.com",
+      url: "https://pixyclick.com",
+      desc: "Static website built with hand‑coded HTML/CSS for fast load times and a clean custom design.",
+      tech: "HTML, CSS, JavaScript",
+      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200"
+    },
+    {
+      id: 24,
+      title: "Personal Portfolio",
+      domain: "my-portfolio-mocha-five-74.vercel.app",
+      url: "https://my-portfolio-mocha-five-74.vercel.app/",
+      desc: "Personal developer portfolio built with Next.js, showcasing projects and skills.",
+      tech: "Next.js, React, Tailwind CSS",
+      img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200"
+    },
+    {
+      id: 25,
+      title: "SwiftToolHub",
+      domain: "swifttoolhub.com",
+      url: "https://swifttoolhub.com/",
+      desc: "Web‑based tools platform built with Next.js for fast, SEO‑friendly utility pages.",
+      tech: "Next.js, React",
+      img: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+    },
+    {
+      id: 26,
+      title: "Trading Signals",
+      domain: "frontend-dusky-five-79.vercel.app",
+      url: "https://frontend-dusky-five-79.vercel.app/",
+      desc: "Forex signals landing page optimized for conversions and clear offer presentation.",
+      tech: "React, HTML, CSS, MERN Stack",
+      img: "/images/tarde.png"
+    },
+    {
+      id: 27,
+      title: "Daily Rasta",
+      domain: "dailyrasta.com",
+      url: "https://dailyrasta.com/",
+      desc: "Content / news website built on Laravel with dynamic content management.",
+      tech: "Laravel, PHP, MySQL",
+      img: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=1200"
+    },
+    {
+      id: 28,
+      title: "Vape Shop UK",
+      domain: "vapeshop.co.uk",
+      url: "https://www.vapeshop.co.uk/",
+      desc: "Shopify e‑commerce store for vape products with clean product browsing and checkout.",
+      tech: "Shopify, Liquid",
+      img: "https://images.unsplash.com/photo-1585386959984-a4155223f3f8?w=1200"
+    },
+    {
+      id: 29,
+      title: "Islamic Honey",
+      domain: "islamichoney.com",
+      url: "https://islamichoney.com/",
+      desc: "Shopify store for honey and organic products with a warm, trust‑driven storefront design.",
+      tech: "Shopify, Liquid",
+      img: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200"
     },
   ];
 
@@ -257,9 +355,9 @@ export default function Page() {
                 </p>
               </div>
               <div>
-                <p className="font-semibold text-white text-base">18</p>
+                <p className="font-semibold text-white text-base">29+</p>
                 <p className="uppercase tracking-[0.22em] text-[10px] mt-1">
-                  Live WordPress Sites
+                  Live Client Websites
                 </p>
               </div>
               <div>
