@@ -65,7 +65,7 @@ export default function Page() {
       url: "https://codees.nl",
       desc: "Software and IT company website with modern service presentation and clear positioning.",
       tech: "WordPress, Custom Theme",
-      img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200"
+      img: "/images/codee.PNG"
     },
     {
       id: 6,
