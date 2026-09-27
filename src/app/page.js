@@ -35,7 +35,7 @@ export default function Page() {
       url: "https://brandshouse.com.pk",
       desc: "Branding and creative agency site showcasing portfolio work and service offerings.",
       tech: "WordPress, Elementor",
-      img: "/images/brandhouse.PNG"
+      img: "/images/brandhouse.png"
     },
     {
       id: 1,
