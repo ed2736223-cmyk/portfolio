@@ -16,7 +16,7 @@ export default function Page() {
       url: "https://topgroup.pk/",
       desc: "Corporate group website presenting multiple business divisions under one unified brand.",
       tech: "WordPress, Elementor",
-      img: "/images/topgroup.PNG"
+      img: "/images/topgroup.png"
     },
     {
       id: 1,
