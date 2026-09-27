@@ -74,7 +74,7 @@ export default function Page() {
       url: "https://superdrive.ae/",
       desc: "Automotive / rental style site with bold imagery and clear contact flows.",
       tech: "WordPress, WooCommerce (optional)",
-      img: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=1200"
+      img: "/images/super.png"
     },
     {
       id: 7,
