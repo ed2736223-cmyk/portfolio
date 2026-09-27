@@ -8,6 +8,16 @@ export default function Page() {
 
   // 1. Projects Data (WordPress, Coding & Shopify portfolio work)
   const projects = [
+
+    {
+      id: 12,
+      title: "Top Group",
+      domain: "topgroup.pk",
+      url: "https://topgroup.pk/",
+      desc: "Corporate group website presenting multiple business divisions under one unified brand.",
+      tech: "WordPress, Elementor",
+      img: "/images/topgroup.PNG"
+    },
     {
       id: 1,
       title: "Jawad CC",
@@ -108,15 +118,7 @@ export default function Page() {
       tech: "WordPress, Elementor",
       img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200"
     },
-    {
-      id: 12,
-      title: "Top Group",
-      domain: "topgroup.pk",
-      url: "https://topgroup.pk/",
-      desc: "Corporate group website presenting multiple business divisions under one unified brand.",
-      tech: "WordPress, Elementor",
-      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200"
-    },
+    
     {
       id: 13,
       title: "Codixa Solutions",
