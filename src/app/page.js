@@ -56,7 +56,7 @@ export default function Page() {
       url: "https://baristeelrack.com",
       desc: "Industrial and commercial product site with clear information hierarchy.",
       tech: "WordPress, Corporate",
-      img: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=1200"
+      img: "/images/bari.PNG"
     },
     {
       id: 5,
