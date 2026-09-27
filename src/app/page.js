@@ -83,7 +83,7 @@ export default function Page() {
       url: "https://curvesfitnesspro.com",
       desc: "Fitness brand website featuring programs, transformations and contact forms.",
       tech: "WordPress, Elementor",
-      img: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1200"
+      img: "/images/curve.png"
     },
     {
       id: 8,
