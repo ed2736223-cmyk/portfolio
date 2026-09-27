@@ -138,7 +138,7 @@ export default function Page() {
       url: "https://www.nextsol.pk/",
       desc: "Technology solutions website with clean service cards and strong calls to action.",
       tech: "WordPress, Elementor",
-      img: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+      img: "/images/nextsol.png"
     },
     {
       id: 15,
