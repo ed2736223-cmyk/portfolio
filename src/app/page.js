@@ -237,7 +237,7 @@ export default function Page() {
       url: "https://swifttoolhub.com/",
       desc: "Web‑based tools platform built with Next.js for fast, SEO‑friendly utility pages.",
       tech: "Next.js, React",
-      img: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200"
+      img: "/images/swifttoolhub.png"
     },
     {
       id: 26,
