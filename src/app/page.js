@@ -101,7 +101,7 @@ export default function Page() {
       url: "https://housemovers.co.uk/",
       desc: "Local services site highlighting moving services, locations and quick quotes.",
       tech: "WordPress, Local SEO",
-      img: "https://images.unsplash.com/photo-1585366119957-e9730b6d0f44?w=1200"
+      img: "/images/house.png"
     },
     {
       id: 10,
