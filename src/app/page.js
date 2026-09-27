@@ -129,7 +129,7 @@ export default function Page() {
       url: "https://codixasolutions.com/",
       desc: "IT solutions company site with service pages, case highlights and lead capture.",
       tech: "WordPress, Elementor",
-      img: "/images/nextsol.png"
+      img: "/images/codixasolutions.png"
     },
     {
       id: 14,
