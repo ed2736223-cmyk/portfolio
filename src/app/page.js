@@ -119,7 +119,7 @@ export default function Page() {
       url: "https://codingailabs.com/",
       desc: "AI and software development company site with service breakdown and a tech‑forward design.",
       tech: "WordPress, Elementor",
-      img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200"
+      img: "/images/codingailabs.png"
     },
     
     {
