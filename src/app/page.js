@@ -10,6 +10,16 @@ export default function Page() {
   const projects = [
 
     {
+      id: 2,
+      title: "CorePrime Markets",
+      domain: "coreprimemarkets.com",
+      url: "https://coreprimemarkets.com/",
+      desc: "Trading and investment platform site with multi‑section layout and clear CTAs.",
+      tech: "WordPress, Custom Theme",
+      img: "/images/coreprime.png"
+    },
+
+    {
       id: 12,
       title: "Top Group",
       domain: "topgroup.pk",
@@ -28,15 +38,7 @@ export default function Page() {
       img: "/images/jawad.PNG"
 
     },
-    {
-      id: 2,
-      title: "CorePrime Markets",
-      domain: "coreprimemarkets.com",
-      url: "https://coreprimemarkets.com/",
-      desc: "Trading and investment platform site with multi‑section layout and clear CTAs.",
-      tech: "WordPress, Custom Theme",
-      img: "https://images.unsplash.com/photo-1523287562758-66c7fc58967a?w=1200"
-    },
+    
     {
       id: 3,
       title: "Brands House",
