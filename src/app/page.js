@@ -29,6 +29,15 @@ export default function Page() {
       img: "/images/topgroup.png"
     },
     {
+      id: 3,
+      title: "Brands House",
+      domain: "brandshouse.com.pk",
+      url: "https://brandshouse.com.pk",
+      desc: "Branding and creative agency site showcasing portfolio work and service offerings.",
+      tech: "WordPress, Elementor",
+      img: "/images/brandhouse.PNG"
+    },
+    {
       id: 1,
       title: "Jawad CC",
       domain: "jawadcc.com",
@@ -39,15 +48,7 @@ export default function Page() {
 
     },
     
-    {
-      id: 3,
-      title: "Brands House",
-      domain: "brandshouse.com.pk",
-      url: "https://brandshouse.com.pk",
-      desc: "Branding and creative agency site showcasing portfolio work and service offerings.",
-      tech: "WordPress, Elementor",
-      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200"
-    },
+    
     {
       id: 4,
       title: "Baristeel Rack",
